@@ -1,0 +1,12 @@
+
+<br>
+<% var i; for (i=0; i < quizes.length; i++) { %>
+<br>
+    <a href="/quizes/<%= quizes[i].id %>"><%= quizes[i].pregunta %></a>
+    <label for="resp" class="rem"><%= quizes[i].tema %></label>
+    <br>
+<% } %>
+<br>
+<p>
+    <a href="/quizes">Volver</a>
+  </p>
